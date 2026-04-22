@@ -5,9 +5,9 @@ Memory starts at 3000H.
 
 
 ```
-MVI B, 04H        ; Outer loop count (n-1 passes)
+MVI B, 05H        ; Outer loop count
 
-LP3: MVI C, 04H   ; Inner loop count
+LP3: MVI C, 05H   ; Inner loop count
      LXI H, 3000H ; Point to start of array
 
 LP2: MOV A, M     ; Load first number
