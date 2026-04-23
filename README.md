@@ -1,4 +1,4 @@
-Here is the assembly language program Program to sort numbers in ascending order for microprocessor 8085.  
+Here is the assembly language program program to sort numbers in ascending order for microprocessor 8085.  
 <br>
 <br>
 ```
