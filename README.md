@@ -5,7 +5,7 @@ Here is the assembly language program Program to sort numbers in ascending order
 MVI B, 05H        ; B is number of passes, We repeat passes to ensure all elements get sorted
                   ; Each pass pushes the largest element to the end
 
-LP2: MVI C, 05H   ; C = comparisons per pass, We compare adjacent elements multiple times in one pass
+LP2: MVI C, 05H   ; C is comparisons per pass, We compare adjacent elements multiple times in one pass
      LXI H, 3000H ; Enter the numbers here
 
 LP1: MOV A, M     ; Load current element into A
@@ -31,40 +31,27 @@ SKIP: DCR C       ; Reduce comparison count
 ```
 <br>
 <br>
-Explaination<br>
-Ascending order means arranging numbers from smallest → largest.  
-For Example:<br>
-Unsorted:  5, 2, 8, 1<br>
-Sorted:    1, 2, 5, 8<br>
 <br>
-Core Idea (Bubble Sort)<br>
-Compare two adjacent elements
-If the left element is bigger, swap them
-Move one step forward and repeat
-After one full pass → largest element goes to the end
-Repeat passes until everything is sorted
-
-Ascending order means arranging numbers from smallest → largest.
-👉 Example:
-Plain text
-Unsorted:  3, 9, 1, 5  
-Sorted:    1, 3, 5, 9
-🧠 Core Idea
-Look at two neighboring numbers
-If left > right → swap
-If left ≤ right → leave it
-Repeat this again and again.
-⚙️ What actually happens
-Smaller numbers move toward the left
-Bigger numbers get pushed to the right
-After each pass → largest number settles at the end
-📌 Example
-Plain text
-Start: 3, 9, 1, 5
-
-Compare 3 & 9 → ok  
-Compare 9 & 1 → swap → 3, 1, 9, 5  
-Compare 9 & 5 → swap → 3, 1, 5, 9  
-
-Next pass → fix remaining pairs  
-Final → 1, 3, 5, 9
+**Explaination**<br>
+Ascending order means arranging numbers from smallest → largest.<br>
+For example<br>
+Unsorted:  3, 9, 1, 5<br>
+Sorted:    1, 3, 5, 9<br>
+<br>
+<br>
+Look at two neighboring numbers<br>
+If left > right → swap<br>
+If left ≤ right → leave it<br>
+<br>
+Repeat this again and again.<br>
+Smaller numbers move toward the left and bigger numbers get pushed to the right. After each pass → largest number settles at the end<br>
+<br>
+<br>
+**For Example**<br>
+Start: 3, 9, 1, 5<br>
+Compare 3 & 9 → ok<br>
+Compare 9 & 1 → swap → 3, 1, 9, 5<br>
+Compare 9 & 5 → swap → 3, 1, 5, 9<br>
+<br>
+Next pass → fix remaining pairs<br>
+Final → 1, 3, 5, 9<br>
