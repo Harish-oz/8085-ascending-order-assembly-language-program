@@ -27,7 +27,7 @@ SKIP: DCR C       ; Reduce comparison count
       DCR B       ; Reduce pass count
       JNZ LP2     ; Repeat passes until array is fully sorted
 
-      HLT         ; Stop
+HLT               ; Stop
 ```
 <br><br><br>
 **Explanation**<br>
