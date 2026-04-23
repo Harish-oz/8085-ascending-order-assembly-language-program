@@ -43,3 +43,28 @@ If the left element is bigger, swap them
 Move one step forward and repeat
 After one full pass → largest element goes to the end
 Repeat passes until everything is sorted
+
+Ascending order means arranging numbers from smallest → largest.
+👉 Example:
+Plain text
+Unsorted:  3, 9, 1, 5  
+Sorted:    1, 3, 5, 9
+🧠 Core Idea
+Look at two neighboring numbers
+If left > right → swap
+If left ≤ right → leave it
+Repeat this again and again.
+⚙️ What actually happens
+Smaller numbers move toward the left
+Bigger numbers get pushed to the right
+After each pass → largest number settles at the end
+📌 Example
+Plain text
+Start: 3, 9, 1, 5
+
+Compare 3 & 9 → ok  
+Compare 9 & 1 → swap → 3, 1, 9, 5  
+Compare 9 & 5 → swap → 3, 1, 5, 9  
+
+Next pass → fix remaining pairs  
+Final → 1, 3, 5, 9
